@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOB - IBM's Complete SDLC Solution</title>
+    <link href="https://unpkg.com/carbon-components@10.58.0/css/carbon-components.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+            color: #161616;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid #0f62fe;
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #0f62fe;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .header .subtitle {
+            font-size: 1.5rem;
+            color: #525252;
+            font-weight: 400;
+        }
+        
+        .tagline {
+            background: linear-gradient(135deg, #0f62fe 0%, #8a3ffc 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(15, 98, 254, 0.2);
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex: 1;
+        }
+        
+        .advantage-card {
+            background: #f4f4f4;
+            border-radius: 8px;
+            padding: 2rem;
+            border-left: 5px solid;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .advantage-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+        
+        .advantage-card.blue {
+            border-left-color: #0f62fe;
+        }
+        
+        .advantage-card.purple {
+            border-left-color: #8a3ffc;
+        }
+        
+        .advantage-card.teal {
+            border-left-color: #009d9a;
+        }
+        
+        .advantage-card .number {
+            font-size: 3rem;
+            font-weight: 700;
+            opacity: 0.15;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .advantage-card.blue .number {
+            color: #0f62fe;
+        }
+        
+        .advantage-card.purple .number {
+            color: #8a3ffc;
+        }
+        
+        .advantage-card.teal .number {
+            color: #009d9a;
+        }
+        
+        .advantage-card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #161616;
+            font-weight: 600;
+        }
+        
+        .advantage-card p {
+            font-size: 1.05rem;
+            color: #525252;
+            line-height: 1.7;
+            flex: 1;
+        }
+        
+        .advantage-card .highlight {
+            background: #e0e0e0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #161616;
+        }
+        
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: auto;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #161616 0%, #393939 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #78a9ff;
+            font-weight: 600;
+        }
+        
+        .info-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #f4f4f4;
+        }
+        
+        .info-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .info-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        .info-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #42be65;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #e0e0e0;
+            color: #525252;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 1200px) {
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .bottom-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BOB</h1>
+            <div class="subtitle">IBM's Complete SDLC Solution</div>
+        </div>
+        
+        <div class="tagline">
+            BOB assists development teams to create, support, maintain, improve, or completely transform enterprise systems — from modern frameworks like Angular and React to legacy systems: Mainframe, IBM i, Java, COBOL, SAP, Gupta
+        </div>
+        
+        <div class="advantages-grid">
+            <div class="advantage-card blue">
+                <div class="number">01</div>
+                <h2>Complete Chain Coverage</h2>
+                <p>
+                    Unlike traditional vibe coding tools that support only developers or testers, <span class="highlight">BOB covers the entire spectrum</span>: designers, architects, consultants, developers, testers, security, and DevOps. Through <span class="highlight">role-based activation</span>, BOB automatically enables the right tools and reasoning for your specific role at session start.
+                </p>
+            </div>
+            
+            <div class="advantage-card purple">
+                <div class="number">02</div>
+                <h2>Real-Time Security & Performance</h2>
+                <p>
+                    While other tools perform security reviews only at the end before pushing to GitHub, <span class="highlight">BOB does it at every step</span>. The <span class="highlight">BOB Linting layer</span> scans in real-time for secrets, performance issues, code quality, and security vulnerabilities — and proposes immediate corrections.
+                </p>
+            </div>
+            
+            <div class="advantage-card teal">
+                <div class="number">03</div>
+                <h2>Deep Vertical Integration</h2>
+                <p>
+                    The most important difference. While competitors focus on horizontal integration (more connectors, APIs, MCPs), <span class="highlight">BOB performs vertical integration</span> — in depth. For enterprise Java systems, APIs aren't enough. BOB includes <span class="highlight">dedicated integration packages</span>: IBM i, System z, Java modernization, DevSecOps. Its hierarchical scanner indexes the entire code tree.
+                </p>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="info-card">
+                <h3>Beyond Language Migration</h3>
+                <p>
+                    Transforming a monolithic system isn't just about language. It's about understanding the system, separating logic, data, and services — then transforming infrastructure, APIs, and data models. Sometimes it's not about migrating, but <strong>evolving</strong>. Today's Mainframe can deliver capabilities superior to SAP when adapted for AI.
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <h3>IBM Ecosystem Integration</h3>
+                <p>
+                    BOB integrates seamlessly with the IBM ecosystem:
+                </p>
+                <ul>
+                    <li>Guardium for data security</li>
+                    <li>Instana for observability</li>
+                    <li>watsonx Orchestrate for AI workflows</li>
+                    <li>Zero human deployment on infrastructure side</li>
+                    <li>Mainframe systems transformed, understood in depth, and automatically redeployed</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            BOB — The complete SDLC tool for modern and legacy enterprise systems
+        </div>
+    </div>
+</body>
+</html>

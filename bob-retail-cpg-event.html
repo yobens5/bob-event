@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob for Retail & CPG - אירוע וירטואלי</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .hero-pattern {
+            background-color: #0a0a0a;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(102, 126, 234, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(118, 75, 162, 0.2) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <img src="1.png" alt="Bob" class="w-10 h-10">
+                    <span class="text-gray-900 font-bold text-xl">Bob AI</span>
+                </div>
+                <a href="https://events.teams.microsoft.com/event/a92abddb-6a03-4603-a314-949b5616ae3b@fcf67057-50c9-4ad4-98f3-ffca64add9e9/registration"
+                   target="_blank"
+                   class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all">
+                    הרשמה
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-32 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 float-animation"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 float-animation" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center">
+                <div class="inline-block mb-6">
+                    <span class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        אירוע וירטואלי בלעדי
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    העתיד של פיתוח<br/>
+                    <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        מונחה AI
+                    </span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    גלו כיצד Bob משנה את הדרך בה מפתחים אפליקציות עבור תעשיית הקמעונאות ומוצרי הצריכה
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <a href="https://events.teams.microsoft.com/event/a92abddb-6a03-4603-a314-949b5616ae3b@fcf67057-50c9-4ad4-98f3-ffca64add9e9/registration"
+                       target="_blank"
+                       class="group bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transition-all flex items-center gap-3">
+                        <span>הצטרפו עכשיו</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.ibm.com/products/bob" 
+                       target="_blank"
+                       class="text-white px-8 py-4 rounded-full text-lg font-semibold border-2 border-white/30 hover:bg-white/10 transition-all">
+                        למידע נוסף
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <div class="glass rounded-2xl p-6 text-white">
+                        <img src="1.png" alt="Bob" class="w-16 h-16 mx-auto mb-3">
+                        <div class="text-2xl font-bold mb-1">60 דקות</div>
+                        <div class="text-sm text-gray-300">של תוכן מרתק</div>
+                    </div>
+                    <div class="glass rounded-2xl p-6 text-white">
+                        <img src="3.png" alt="Bob" class="w-16 h-16 mx-auto mb-3">
+                        <div class="text-2xl font-bold mb-1">הדגמות חיות</div>
+                        <div class="text-sm text-gray-300">פיתוח בזמן אמת</div>
+                    </div>
+                    <div class="glass rounded-2xl p-6 text-white">
+                        <img src="5.png" alt="Bob" class="w-16 h-16 mx-auto mb-3">
+                        <div class="text-2xl font-bold mb-1">גישה ל-Bob</div>
+                        <div class="text-sm text-gray-300">לכל המשתתפים</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Bob -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        היכרות עם Bob
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        עוזר AI שמשנה<br/>את כללי המשחק
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Bob הוא עוזר AI מתקדם של IBM המאפשר לצוותי פיתוח ליצור, לבנות ולפרוס אפליקציות בצורה מהירה ויעילה פי כמה.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        באירוע זה תגלו כיצד Bob יכול לשנות את הדרך בה אתם מפתחים פתרונות עבור תעשיית הקמעונאות ומוצרי הצריכה.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-3xl p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-purple-300 rounded-full filter blur-3xl opacity-30"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-indigo-300 rounded-full filter blur-3xl opacity-30"></div>
+                        <div class="relative space-y-4">
+                            <div class="bg-white rounded-xl p-4 shadow-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">פיתוח מהיר פי 3</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">קוד איכותי יותר</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">פחות באגים</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">מה תלמדו באירוע</h2>
+                <p class="text-xl text-gray-600">שעה אחת מלאה בתובנות, הדגמות וידע מעשי</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="1.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">היכרות עם Bob</h3>
+                    <p class="text-gray-600 text-center">הצגה מקיפה של יכולות Bob והאופן בו הוא משנה את תהליכי הפיתוח</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="bob retail.png" alt="Retail" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 text-center">מקרי שימוש ב-Retail</h3>
+                    <p class="text-gray-300 text-center">דוגמאות מעשיות לפיתוח אפליקציות קמעונאות עם Bob</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="bob cpg.png" alt="CPG" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 text-center">פתרונות CPG</h3>
+                    <p class="text-gray-300 text-center">כיצד לפתח פתרונות חכמים לתעשיית מוצרי הצריכה</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="3.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">הדגמות חיות</h3>
+                    <p class="text-gray-600 text-center">צפייה בפיתוח אפליקציות בזמן אמת עם Bob</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="2.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">כלי פיתוח</h3>
+                    <p class="text-gray-600 text-center">למידה על הכלים והטכנולוגיות המשולבות ב-Bob</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-6">
+                        <img src="5.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">גישה ל-Bob</h3>
+                    <p class="text-gray-600 text-center">קבלת גישה בלעדית לשימוש ב-Bob לאחר האירוע</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">מקרי שימוש ב-Retail & CPG</h2>
+                <p class="text-xl text-gray-600">פתרונות מתקדמים שתוכלו לפתח עם Bob</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="group bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 border-2 border-purple-100 hover:border-purple-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            01
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">מערכות ניהול מלאי חכמות</h4>
+                            <p class="text-gray-600">פיתוח אפליקציות לניהול מלאי בזמן אמת עם חיזוי ביקוש מבוסס AI</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border-2 border-blue-100 hover:border-blue-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            02
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">פלטפורמות e-commerce</h4>
+                            <p class="text-gray-600">בניית חנויות מקוונות עם המלצות מותאמות אישית ו-UX מתקדם</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-to-br from-pink-50 to-white rounded-2xl p-6 border-2 border-pink-100 hover:border-pink-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            03
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">אפליקציות ניתוח לקוחות</h4>
+                            <p class="text-gray-600">כלים לניתוח התנהגות קונים, מגמות שוק ותובנות עסקיות</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 border-2 border-green-100 hover:border-green-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            04
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">מערכות תמחור דינמי</h4>
+                            <p class="text-gray-600">פתרונות לאופטימיזציה של מחירים בזמן אמת על בסיס ביקוש</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border-2 border-orange-100 hover:border-orange-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            05
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">כלי ניהול שרשרת אספקה</h4>
+                            <p class="text-gray-600">אפליקציות למעקב ואופטימיזציה של לוגיסטיקה ותפעול</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-to-br from-violet-50 to-white rounded-2xl p-6 border-2 border-violet-100 hover:border-violet-300 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            06
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">פתרונות חווית לקוח</h4>
+                            <p class="text-gray-600">צ'אטבוטים ועוזרים וירטואליים חכמים לשירות לקוחות 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda -->
+    <section class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">סדר היום</h2>
+                <p class="text-xl text-gray-400">60 דקות של תוכן מרוכז ומעשי</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-gray-800 rounded-2xl p-6 border-r-4 border-purple-500 hover:bg-gray-750 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-purple-500 text-white px-4 py-2 rounded-lg font-bold text-center">
+                                00:00 - 00:10
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl mb-2">פתיחה וברוכים הבאים</h4>
+                            <p class="text-gray-400">היכרות עם המשתתפים ומבט על תוכנית האירוע</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl p-6 border-r-4 border-blue-500 hover:bg-gray-750 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-blue-500 text-white px-4 py-2 rounded-lg font-bold text-center">
+                                00:10 - 00:25
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl mb-2">הצגת Bob</h4>
+                            <p class="text-gray-400">מהו Bob? יכולות, תכונות ויתרונות לצוותי פיתוח</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl p-6 border-r-4 border-pink-500 hover:bg-gray-750 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-pink-500 text-white px-4 py-2 rounded-lg font-bold text-center">
+                                00:25 - 00:40
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl mb-2">מקרי שימוש ב-Retail & CPG</h4>
+                            <p class="text-gray-400">הדגמות חיות של פיתוח אפליקציות עם Bob</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl p-6 border-r-4 border-green-500 hover:bg-gray-750 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold text-center">
+                                00:40 - 00:50
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl mb-2">כיצד להתחיל עם Bob</h4>
+                            <p class="text-gray-400">מדריך מעשי לשימוש ב-Bob בארגון שלכם</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl p-6 border-r-4 border-orange-500 hover:bg-gray-750 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-center">
+                                00:50 - 01:00
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl mb-2">שאלות ותשובות</h4>
+                            <p class="text-gray-400">מענה לשאלות המשתתפים וסיכום</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 px-4 bg-gradient-to-br from-purple-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">למי מיועד האירוע?</h2>
+                <p class="text-xl text-gray-600">האירוע מתאים למגוון רחב של אנשי מקצוע</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="1.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">מפתחים</h3>
+                    <p class="text-gray-600 text-center">מהנדסי תוכנה המעוניינים לשפר את תהליכי הפיתוח</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="2.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">ארכיטקטים</h3>
+                    <p class="text-gray-600 text-center">ארכיטקטי מערכות המחפשים כלים מתקדמים</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="3.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">מנהלי מוצר</h3>
+                    <p class="text-gray-600 text-center">מנהלי מוצר המעוניינים להאיץ פיתוח</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="4.png" alt="Bob" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">מנהלי IT</h3>
+                    <p class="text-gray-600 text-center">מנהלי טכנולוגיה המחפשים פתרונות חדשניים</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="bob retail.png" alt="Retail" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 text-center">אנשי Retail</h3>
+                    <p class="text-gray-300 text-center">אנשי מקצוע בקמעונאות המעוניינים בדיגיטציה</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <div class="w-20 h-20 mx-auto mb-4">
+                        <img src="bob cpg.png" alt="CPG" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 text-center">אנשי CPG</h3>
+                    <p class="text-gray-300 text-center">מנהלים בחברות מוצרי צריכה</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full filter blur-3xl opacity-10"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-300 rounded-full filter blur-3xl opacity-10"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">מוכנים להצטרף?</h2>
+            <p class="text-xl md:text-2xl mb-12 text-purple-100">
+                אל תפספסו את ההזדמנות להיות חלק מהמהפכה בפיתוח אפליקציות
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://events.teams.microsoft.com/event/a92abddb-6a03-4603-a314-949b5616ae3b@fcf67057-50c9-4ad4-98f3-ffca64add9e9/registration"
+                   target="_blank"
+                   class="bg-white text-purple-600 px-10 py-5 rounded-full text-lg font-bold hover:bg-gray-100 transition-all shadow-2xl">
+                    הרשמה לאירוע
+                </a>
+                <a href="https://www.ibm.com/products/bob" 
+                   target="_blank"
+                   class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 transition-all">
+                    למידע נוסף על Bob
+                </a>
+            </div>
+            
+            <p class="text-purple-200">
+                מספר המקומות מוגבל • הירשמו עכשיו
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="1.png" alt="Bob" class="w-10 h-10">
+                    <span class="font-bold text-xl">Bob AI</span>
+                </div>
+                
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="https://www.ibm.com/products/bob" target="_blank" class="hover:text-white transition-colors">IBM Bob</a>
+                    <span>•</span>
+                    <a href="https://www.ibm.com" target="_blank" class="hover:text-white transition-colors">IBM</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2026 IBM. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
