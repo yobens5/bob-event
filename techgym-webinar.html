@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob x Tech Gym - וובינר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #0f62fe 0%, #001d6c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .hero-pattern {
+            background-color: #0a0a0a;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(102, 126, 234, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(118, 75, 162, 0.2) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-4">
+                    <img src="1.png" alt="Bob" class="w-10 h-10">
+                    <span class="text-gray-900 font-bold text-xl">Bob AI</span>
+                    <div class="h-8 w-px bg-gray-300 mx-2"></div>
+                    <img src="techgym_logo.svg" alt="Tech Gym" class="h-8 w-auto">
+                </div>
+                <a href="https://events.teams.microsoft.com/event/4fe2c583-0bb1-4449-818a-91681a37ebe1@fcf67057-50c9-4ad4-98f3-ffca64add9e9"
+                   target="_blank"
+                   class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all">
+                    הרשמה עכשיו
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-24 pb-12 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 float-animation"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 float-animation" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center">
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold border border-white/30">
+                        וובינר בלעדי
+                    </span>
+                    <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        קהילת Tech Gym
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    <span class="text-blue-200">
+                        מרעיון לפתרון עם בוב
+                    </span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    הצטרפו אלינו לסשן בלעדי המיועד לבכירים בתעשייה והטכנולוגיה.
+                    גלו כיצד תוכלו להפוך רעיון לפתרון עם כלים אג'נטיים כמו בוב.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <div class="glass rounded-2xl px-8 py-4 text-white">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <div class="text-left">
+                                <p class="text-sm text-blue-100">תאריך</p>
+                                <p class="font-bold">24 במאי 2026 • שבת</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl px-8 py-4 text-white">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div class="text-left">
+                                <p class="text-sm text-blue-100">שעה</p>
+                                <p class="font-bold">09:00 - 10:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl px-8 py-4 text-white">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                            </svg>
+                            <div class="text-left">
+                                <p class="text-sm text-blue-100">פורמט</p>
+                                <p class="font-bold">וובינר מקוון</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <p class="text-lg text-gray-600">
+                        לקראת תוכנית ההאקתון של Tech Gym + Meitiv, אנחנו רוצים לתת לכם היכרות מקיפה עם בוב
+                        ולהעניק לכם גישה לחודש אחד / 40 בובקוינס לבניית פתרונות.
+                    </p>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                    <p class="text-blue-900 font-semibold mb-2">🎯 עבור:</p>
+                    <ul class="text-blue-800 space-y-2">
+                        <li>• בכירים בתעשייה והטכנולוגיה</li>
+                        <li>• מי שמעוניין להבין את עידן ה-AI</li>
+                        <li>• מי שרוצה להפוך רעיונות לפתרונות</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">הדוברים שלנו</h2>
+                <p class="text-xl text-gray-600">מומחי IBM ומנהיגי קהילת Tech Gym</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center border-t-4 border-purple-500">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-purple-200">
+                        <img src="yohan-bensoussan.avif" alt="Yohan Bensoussan" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">יוחנן בן סוסן</h3>
+                    <p class="text-purple-600 font-semibold mb-2">מוביל הנדסת לקוחות IBM</p>
+                    <p class="text-sm text-gray-600">מוביל צוות הנדסת לקוחות של IBM, מתמחה בפתרונות AI</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center border-t-4 border-blue-500">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-blue-200">
+                        <img src="michal.jpeg" alt="Michal Hershkovitz" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">מיכל הרשקוביץ</h3>
+                    <p class="text-blue-600 font-semibold mb-2">מובילת קהילת Tech Gym</p>
+                    <p class="text-sm text-gray-600">מובילה את קהילת המפתחים של Tech Gym בישראל</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center border-t-4 border-indigo-500">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-indigo-200">
+                        <img src="tal neeman.jpeg" alt="Tal Neeman" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">טל נאמן</h3>
+                    <p class="text-indigo-600 font-semibold mb-2">אדריכל IBM</p>
+                    <p class="text-sm text-gray-600">אדריכל טכני המתמחה בפתרונות AI וענן</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center border-t-4 border-pink-500">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-pink-200">
+                        <img src="igor polubarev.png" alt="Igor Polubarev" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">איגור פולובארב</h3>
+                    <p class="text-pink-600 font-semibold mb-2">אדריכל IBM</p>
+                    <p class="text-sm text-gray-600">אדריכל עם מומחיות במודרניזציה ופיתוח</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">מה תלמדו</h2>
+                <p class="text-xl text-gray-600">60 דקות של תובנות, הדגמות חיות וידע מעשי</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg border-2 border-blue-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">יסודות Vibe Coding</h3>
+                    <p class="text-gray-600 text-center">הבינו מה זה vibe coding ולמה זה חשוב לפיתוח מודרני</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 shadow-lg border-2 border-indigo-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">צלילה עמוקה לבוב</h3>
+                    <p class="text-gray-600 text-center">סקירה מקיפה של יכולות בוב וכיצד הוא משנה את הפיתוח</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg border-2 border-purple-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">מקרי שימוש אמיתיים</h3>
+                    <p class="text-gray-600 text-center">הדגמות חיות המציגות את בוב בפעולה עם דוגמאות מעשיות</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda -->
+    <section class="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">סדר היום</h2>
+                <p class="text-xl text-gray-600">60 דקות של תוכן ממוקד ומעשי</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border-l-4 border-blue-500">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <div class="flex-shrink-0 bg-blue-500 text-white px-4 py-2 rounded-lg font-bold text-center min-w-[100px]">
+                            10 דקות
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">יוחנן בן סוסן ומיכל</h4>
+                            <p class="text-gray-600 mb-2">דברי פתיחה והכנת הבמה לסשן</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border-l-4 border-indigo-500">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <div class="flex-shrink-0 bg-indigo-500 text-white px-4 py-2 rounded-lg font-bold text-center min-w-[100px]">
+                            10 דקות
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">מה זה בוב</h4>
+                            <p class="text-gray-600 mb-2">סקירה מקיפה של יכולות בוב</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border-l-4 border-purple-500">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <div class="flex-shrink-0 bg-purple-500 text-white px-4 py-2 rounded-lg font-bold text-center min-w-[100px]">
+                            30 דקות
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">דוגמאות</h4>
+                            <p class="text-gray-600 mb-2">הדגמות מהעולם האמיתי המציגות את בוב בפעולה</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">למה להשתתף?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg border-2 border-blue-100">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">הישארו רלוונטיים</h3>
+                            <p class="text-gray-600">הבינו כיצד AI משנה את פיתוח התוכנה ומה זה אומר לקריירה שלכם</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 shadow-lg border-2 border-indigo-100">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">הכנה להאקתון</h3>
+                            <p class="text-gray-600">קבלו יתרון לפני השקת תוכנית Tech Gym + Meitiv</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg border-2 border-purple-100">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">ידע מעשי</h3>
+                            <p class="text-gray-600">ראו מקרי שימוש אמיתיים ולמדו כיצד ליישם vibe coding בפרויקטים שלכם</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 shadow-lg border-2 border-pink-100">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">קבלו גישה לבוב</h3>
+                            <p class="text-gray-600">למדו כיצד לקבל גישה לבוב לתוכנית ההאקתון</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="register" class="py-20 px-4 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full filter blur-3xl opacity-10"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-10"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">מוכנים להצטרף?</h2>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                24 במאי 2026 • שבת • 09:00 - 10:00
+            </p>
+            <p class="text-lg mb-12 text-blue-100 max-w-2xl mx-auto">
+                אל תפספסו את ההזדמנות ללמוד על vibe coding ולהתכונן להאקתון
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://events.teams.microsoft.com/event/4fe2c583-0bb1-4449-818a-91681a37ebe1@fcf67057-50c9-4ad4-98f3-ffca64add9e9"
+                   target="_blank"
+                   class="bg-white text-blue-600 px-10 py-5 rounded-full text-lg font-bold hover:bg-gray-100 transition-all shadow-2xl">
+                    הרשמה לוובינר
+                </a>
+                <a href="https://www.ibm.com/products/bob"
+                   target="_blank"
+                   class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 transition-all">
+                    למדו עוד על בוב
+                </a>
+            </div>
+            
+            <p class="text-blue-200">
+                מקומות מוגבלים • הירשמו עכשיו
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="1.png" alt="Bob" class="w-10 h-10">
+                    <span class="font-bold text-xl">Bob AI</span>
+                    <div class="h-8 w-px bg-gray-700 mx-2"></div>
+                    <img src="techgym_logo.svg" alt="Tech Gym" class="h-8 w-auto">
+                </div>
+                
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="https://www.ibm.com/products/bob" target="_blank" class="hover:text-white transition-colors">IBM Bob</a>
+                    <span>•</span>
+                    <a href="https://www.techgym.co.il" target="_blank" class="hover:text-white transition-colors">Tech Gym</a>
+                    <span>•</span>
+                    <a href="https://www.ibm.com" target="_blank" class="hover:text-white transition-colors">IBM</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2026 IBM. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
